@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MascaraComponent } from './mascara/mascara.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [MascaraComponent]
+  declarations: []
 })
-export class LayoutModule { }
+export class UserModule { }

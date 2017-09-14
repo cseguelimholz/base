@@ -1,18 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {LayoutModule} from '../app/layout/layout.module';
-import {MascaraComponent} from '../app/layout/mascara/mascara.component';
+
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { EntradaComponent } from './entrada/entrada.component';
 
 
 @NgModule({
   declarations: [
- 
+    AppComponent,
+    HomeComponent,
+    EntradaComponent
+    
+    
   ],
   imports: [
-    BrowserModule,
-    LayoutModule
+    BrowserModule
   ],
   providers: [],
-  bootstrap: [MascaraComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
