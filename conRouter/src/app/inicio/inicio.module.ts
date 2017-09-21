@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InicioComponent } from './inicio.component';
+import {SharedModule} from './../shared/shared.module';
 import { CabeceraComponent } from './pantalla/cabecera/cabecera.component';
 import { ContenidoComponent } from './pantalla/contenido/contenido.component';
 import{Routes,RouterModule} from '@angular/router';
@@ -25,7 +26,9 @@ const rutas: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(rutas)
+    RouterModule.forRoot(rutas),
+    SharedModule
+
    
   ],
   declarations: [
